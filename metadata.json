@@ -1,0 +1,5 @@
+{
+  "name": "Vedic AI Astrologer",
+  "description": "A mystical AI-powered Vedic astrology consultant with real-time chat and cosmic insights.",
+  "requestFramePermissions": ["microphone"]
+}
