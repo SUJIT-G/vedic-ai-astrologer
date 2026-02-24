@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Inter:wght@100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Cormorant Garamond", serif;
+  --font-mono: "JetBrains Mono", monospace;
+
+  --color-vedic-gold: #fbbf24;
+  --color-vedic-purple: #302b63;
+  --color-vedic-dark: #0f0c29;
+  --color-vedic-deep: #24243e;
+}
+
+@layer base {
+  body {
+    @apply bg-vedic-dark text-white font-sans antialiased;
+  }
+}
+
+.glass {
+  @apply bg-white/10 backdrop-blur-md border border-white/20;
+}
+
+.vedic-gradient {
+  background: linear-gradient(135deg, var(--color-vedic-dark) 0%, var(--color-vedic-purple) 50%, var(--color-vedic-deep) 100%);
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
