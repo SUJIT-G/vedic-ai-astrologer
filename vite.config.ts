@@ -22,3 +22,8 @@ export default defineConfig(({mode}) => {
     },
   };
 });
+// vite.config.ts
+export default defineConfig({
+  base: '/', // Make sure this is '/' for custom domains/subdomains
+  // ... rest of your config
+})
