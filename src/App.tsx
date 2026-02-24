@@ -17,7 +17,7 @@ import {
 } from 'lucide-react';
 import Markdown from 'react-markdown';
 import confetti from 'canvas-confetti';
-import { cn } from './lib/utils';
+import { cn } from './services/utils';
 import { getVedicResponse, ChatMessage } from './services/geminiService';
 
 // Razorpay types
